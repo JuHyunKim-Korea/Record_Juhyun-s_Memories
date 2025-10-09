@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Juhyun's Memories - Life Journey RPG</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Funnel+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="min-h-screen retro-bg p-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- Header -->
+            <div id="header" class="retro-bg p-6 pixel-border mb-6">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h1 class="text-white pixel-font text-lg">Recording Juhyun's Memories...</h1>
+                        <p class="text-white/90 text-xs mt-1 funnel-mono">Life Journey RPG</p>
+                    </div>
+                    <div class="text-right text-white">
+                        <div class="pixel-font text-xs">2042.03.26</div>
+                        <div class="text-xs opacity-80 funnel-font">11:20:25</div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900/80 pixel-border p-4 border-white">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-green-400 pixel-font text-xs">LV.<span id="current-level">25</span></span>
+                        <span class="text-yellow-400 pixel-font text-xs"><span id="progress-text">25</span>/40</span>
+                    </div>
+                    <div class="pixel-progress mb-2">
+                        <div class="progress-bar h-4" style="width: 62.5%"></div>
+                    </div>
+                    <div class="text-center text-cyan-300 pixel-font text-xs">
+                        FINAL GOAL: RIOT GAMES TFT PROJECT MANAGER
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="mb-12 pixel-border bg-gray-900/90 p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="pixel-font text-sm text-green-400 mb-2">LIFE TIMELINE</h2>
+                        <p class="text-cyan-300 text-xs funnel-font">Record Juhyun's lifetime moments here 😄</p>
+                    </div>
+                    <button id="add-memory-btn" class="pixel-button bg-green-500 hover:bg-green-600 text-white px-4 py-2">
+                        <i class="fas fa-plus mr-2"></i>
+                        ADD MEMORY
+                    </button>
+                </div>
+            </div>
+
+            <!-- Memory Cards Grid -->
+            <div id="memories-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Memory cards will be dynamically inserted here -->
+            </div>
+
+            <!-- Future Goal Section -->
+            <div class="mt-12 pixel-border bg-gradient-to-r from-yellow-300 to-orange-400 p-6">
+                <div class="text-center">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="fas fa-gamepad text-orange-800 mr-2"></i>
+                        <h3 class="pixel-font text-sm text-orange-800">
+                            FUTURE GOAL
+                        </h3>
+                    </div>
+                    <p class="text-orange-900 text-xs funnel-font mb-4">
+                        Year 2042: Level 40 Achievement Unlocked
+                    </p>
+                    <div class="bg-red-500 pixel-border border-red-700 p-3 inline-block">
+                        <p class="pixel-font text-xs text-white">
+                            FINAL GOAL: RIOT GAMES TFT PROJECT MANAGER
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Modal -->
+    <div id="memory-modal" class="modal-overlay hidden">
+        <div class="modal-content pixel-border bg-gradient-to-br from-indigo-100 to-purple-100">
+                <button id="close-modal" class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            
+            
+            <div class="modal-body">
+                <div class="modal-header-container">
+                    <div class="modal-header">
+                        <h3 id="modal-title" class="pixel-font text-lg text-indigo-800"></h3>
+                        <p id="modal-subtitle" class="pixel-font text-xs text-indigo-600"></p>
+                    </div>
+                </div>
+
+                <div class="relative mb-6">
+                    <img id="modal-image" src="" alt="" class="w-full h-64 object-cover pixel-border">
+                    <div class="absolute top-4 left-4">
+                        <div class="bg-red-500 pixel-border border-red-700 px-3 py-2">
+                            <span id="modal-level" class="pixel-font text-xs text-white"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="pixel-card p-3 border-cyan-500">
+                        <i class="fas fa-calendar text-cyan-600 mb-2"></i>
+                        <div>
+                            <p class="pixel-font text-xs text-cyan-700 mb-1">DATE</p>
+                            <p id="modal-date" class="funnel-font text-sm"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="pixel-card p-3 border-green-500">
+                        <i class="fas fa-user text-green-600 mb-2"></i>
+                        <div>
+                            <p class="pixel-font text-xs text-green-700 mb-1">AGE</p>
+                            <p id="modal-age" class="funnel-font text-sm"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="pixel-card p-3 border-orange-500">
+                        <i class="fas fa-tag text-orange-600 mb-2"></i>
+                        <div>
+                            <p class="pixel-font text-xs text-orange-700 mb-1">TYPE</p>
+                            <p id="modal-category" class="funnel-font text-sm"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pixel-card p-4 border-purple-500 bg-gradient-to-r from-purple-50 to-pink-50 mb-6">
+                    <h4 class="pixel-font text-xs text-purple-800 mb-3">STORY DESCRIPTION</h4>
+                    <p id="modal-description" class="text-gray-700 leading-relaxed text-sm funnel-font"></p>
+                </div>
+                
+                <div id="modal-achievements" class="pixel-card p-4 border-yellow-500 bg-gradient-to-r from-yellow-50 to-orange-50 hidden">
+                    <h4 class="pixel-font text-xs text-yellow-800 mb-3">ACHIEVEMENTS</h4>
+                    <div id="achievements-list" class="flex flex-wrap gap-2">
+                        <!-- Achievements will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Memory Modal -->
+    <div id="add-memory-modal" class="modal-overlay hidden">
+        <div class="modal-content pixel-border bg-gradient-to-br from-blue-100 to-purple-100">
+            <div class="modal-header">
+                <h3 class="pixel-font text-lg text-blue-800">
+                    <i class="fas fa-gamepad mr-2"></i>
+                    Add New Memory
+                </h3>
+                <p class="pixel-font text-xs text-blue-600">
+                    Add a new memory to Juhyun's timeline
+                </p>
+                <button id="close-add-modal" class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="add-memory-form" class="modal-body">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="space-y-2">
+                        <label class="pixel-font text-blue-700">Title *</label>
+                        <input id="memory-title" type="text" class="w-full pixel-border bg-white p-2 funnel-font" placeholder="e.g. First Game Development" required>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label class="pixel-font text-blue-700">Category</label>
+                        <select id="memory-category" class="w-full pixel-border bg-white p-2 funnel-font">
+                            <option value="">Select Category</option>
+                            <option value="Game">Game</option>
+                            <option value="Education">Education</option>
+                            <option value="Project">Project</option>
+                            <option value="Career">Career</option>
+                            <option value="Hobby">Hobby</option>
+                            <option value="Travel">Travel</option>
+                            <option value="Relationship">Relationship</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <div class="space-y-2">
+                        <label class="pixel-font text-blue-700">Age *</label>
+                        <input id="memory-age" type="number" class="w-full pixel-border bg-white p-2 funnel-font" placeholder="25" min="1" max="100" required>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label class="pixel-font text-blue-700">Year *</label>
+                        <input id="memory-year" type="number" class="w-full pixel-border bg-white p-2 funnel-font" placeholder="2025" min="1900" max="2100" required>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label class="pixel-font text-blue-700">Date</label>
+                        <input id="memory-date" type="text" class="w-full pixel-border bg-white p-2 funnel-font" placeholder="March 15, 2025">
+                    </div>
+                </div>
+
+                <div class="space-y-2 mb-4">
+                    <label class="pixel-font text-blue-700">Description *</label>
+                    <textarea id="memory-description" class="w-full pixel-border bg-white p-2 min-h-[100px] funnel-font" placeholder="Tell us your special story about this moment..." required></textarea>
+                </div>
+
+                <div class="space-y-2 mb-4">
+                    <label class="pixel-font text-blue-700">Image URL</label>
+                    <div class="flex gap-2">
+                        <input id="memory-image" type="url" class="flex-1 pixel-border bg-white p-2 funnel-font" placeholder="https://... or use auto search">
+                        <button id="search-image-btn" type="button" class="pixel-button bg-green-500 hover:bg-green-600 text-white px-3">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="space-y-2 mb-6">
+                    <label class="pixel-font text-blue-700">Achievements (Use , to separate)</label>
+                    <input id="memory-achievements" type="text" class="w-full pixel-border bg-white p-2 funnel-font" placeholder="e.g. First Game, Teamwork, Creativity">
+                </div>
+
+                <div class="flex gap-2">
+                    <button type="button" id="cancel-add-btn" class="pixel-button flex-1 border-gray-400 text-gray-600 hover:bg-gray-100 p-2">
+                        Cancel
+                    </button>
+                    <button type="submit" class="pixel-button flex-1 bg-blue-500 hover:bg-blue-600 text-white p-2">
+                        <i class="fas fa-plus mr-2"></i>
+                        Add Memory
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
