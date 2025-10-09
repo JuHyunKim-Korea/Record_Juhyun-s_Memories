@@ -3,11 +3,11 @@ let memories = [
     {
       id: 1,
       title: "First PC Gaming Experience",
-      description: "The moment I first played League of Legends on my first gaming computer that my father bought me. This experience planted the seed of my dream to become a game developer.",
-      image: "https://images.unsplash.com/photo-1624357676666-4cca3b657627?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      age: 12,
-      year: 2012,
-      date: "Summer 2012",
+      description: "I remember the first PC/Flash game that I've encountered which was a game called 'Avata Star Sue' with story episodes. I had fun playing those series of games, such as baking, finding hidden items, creating potions based on recipes, and many other concepts.",
+      image: "https://i.namu.wiki/i/w-CC44y2koeY-oQk6xEnuIoufM9PM387CamPZYsRx0zEwrzzbMJXtCfqQRDAk0G-B85JoKfOKb07aRWO-sRlaA.webp",
+      age: 8,
+      year: 2010,
+      date: "Summer 2010",
       category: "Game",
       achievements: ["First Gaming Experience", "Dream Begins"]
     },
