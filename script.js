@@ -2,7 +2,7 @@
 let memories = [
     {
       id: 1,
-      title: "First PC Gaming Experience",
+      title: "First Gaming Experience",
       description: "I remember the first PC/Flash game that I've encountered which was a game called 'Avata Star Sue' with story episodes. I had fun playing those series of games, such as baking, finding hidden items, creating potions based on recipes, and many other concepts.",
       image: "https://i.namu.wiki/i/w-CC44y2koeY-oQk6xEnuIoufM9PM387CamPZYsRx0zEwrzzbMJXtCfqQRDAk0G-B85JoKfOKb07aRWO-sRlaA.webp",
       age: 8,
@@ -14,80 +14,157 @@ let memories = [
     {
       id: 2,
       title: "High School Enrollment",
-      description: "Started high school life with new friends. Joined the computer club and began to develop an interest in programming.",
-      image: "https://images.unsplash.com/photo-1722263147569-fa8873772867?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      age: 16,
-      year: 2016,
-      date: "March 2016",
-      category: "Education",
-      achievements: ["New Beginning", "Club Membership"]
-    },
-    {
-      id: 3,
-      title: "First Game Development Project",
-      description: "Created my first 2D platformer game while learning Unity with friends. It was full of bugs, but I felt the joy of completion.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      age: 18,
-      year: 2018,
-      date: "December 2018",
-      category: "Project",
-      achievements: ["First Game Completed", "Teamwork", "Unity Mastered"]
-    },
-    {
-      id: 4,
-      title: "Game Design University Enrollment",
-      description: "Enrolled in the game design program of my dreams. Improved my skills through professional game development education.",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      age: 19,
+      description: "Enrolled to a foreign language high school in South Korea and started a unique life with new friends. Majored in Japanese and participated in the School festival, athletic team, music contest, and more. ",
+      image: "https://blog.kakaocdn.net/dna/uNhIn/btsE6B8tghZ/AAAAAAAAAAAAAAAAAAAAACk86AemxMKAI-IWlIkLm_-ntsAmrNrmCXgCU4XJu8jI/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=oMEDXmAvkWT9WLABzIi1HC2RcKE%3D",
+      age: 17,
       year: 2019,
       date: "March 2019",
       category: "Education",
-      achievements: ["Game Design Major", "New Challenge"]
+      achievements: ["New Beginning", "Unforgettable memories"]
+    },
+    {
+      id: 3,
+      title: "Beginning as a Computer Engineering Student",
+      description: "First time writing C++ codes and creating simple mechanisms. I felt proud of myself when I saw the successful outcome for writing several lines of codes that took hours and days.",
+      image: "/Users/juhyun/Desktop/UAC_Scholarship/Screenshot 2025-10-20 at 6.06.03 AM.png",
+      age: 20,
+      year: 2022,
+      date: "August 2022",
+      category: "Education",
+      achievements: ["C++ Programming"]
+    },
+    {
+      id: 4,
+      title: "2nd Beginning as a Utah Games student",
+      description: "Enrolled in the game design program of my dreams. Improved my skills through professional game development education.",
+      image: "/Users/juhyun/Downloads/IMG_3349.PNG",
+      age: 22,
+      year: 2024,
+      date: "August 2024",
+      category: "Education",
+      achievements: ["Games Major", "2nd Beginning chapter"]
     },
     {
       id: 5,
-      title: "Game Jam Winner",
-      description: "Won first place in a 48-hour game jam with my team by creating 'Pixel Adventure'. My first game development award.",
+      title: "First Game Project",
+      description: "First time creating a psychological simulation game with my teammates. While the processes were difficult with numerous conflicts, nevertheless, I was happy with the outcome my team and I made at the end of the semester. Also, it was the first game project that was laucnhed itch.io and STEAM, which was very meaningful to me.",
       image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      age: 21,
-      year: 2021,
-      date: "November 2021",
+      age: 23,
+      year: 2025,
+      date: "August 2025",
       category: "Project",
-      achievements: ["Game Jam Winner", "Rapid Development", "Creativity"]
+      achievements: ["First Game Project", "Unreal Engine", "Maya Modeling", "Project Manager"]
     },
     {
       id: 6,
-      title: "Indie Game Studio Intern",
-      description: "First internship experience at a small indie game studio. Learned the real game development process and collaborated with professional developers.",
-      image: "https://images.unsplash.com/photo-1736939666660-d4c776e0532c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      age: 22,
-      year: 2022,
-      date: "Summer 2022",
+      title: "Transition from Asia Campus to SLC",
+      description: "First time studying abroad apart from my family. I was nervous and also excited to study with talented students and learn from professors who are experts in the current field.",
+      image: "/Users/juhyun/Downloads/IMG_0362.jpg",
+      age: 24,
+      year: 2026,
+      date: "January 2026",
+      category: "Career",
+      achievements: ["First time studying abroad", "Utah life"]
+    },
+    {
+      id: 7,
+      title: "Riot Games University Program Intern",
+      description: "First internship experience at my dream company. Experiences at Riot Games will be unforgettable for my entire life. The work environment, tasks, food, everything that could be mentioned were perfect and beyond my expectation. It made me much clearer to work as a senior manager in the upcoming years.",
+      image: "/Users/juhyun/Desktop/Screenshot 2025-10-20 at 6.45.27 AM.png",
+      age: 25,
+      year: 2027,
+      date: "Summer 2027",
       category: "Career",
       achievements: ["First Internship", "Industry Experience", "Game Launch Contribution"]
     },
     {
-      id: 7,
-      title: "Graduation Project Completed",
-      description: "Completed my graduation project 'Dream Quest' containing four years of learning. Released it on Steam and received positive reviews.",
-      image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      age: 23,
-      year: 2023,
-      date: "February 2023",
+      id: 8,
+      title: "Capstone Graduation Project Completed",
+      description: "Completed my Capstone graduation project containing four years of learning. Released it on Steam and received positive reviews. I am so happy and excited to see people enjoying the game that I made for a year.",
+      image: "/Users/juhyun/Desktop/Screenshot 2025-10-20 at 6.33.26 AM.png",
+      age: 25,
+      year: 2027,
+      date: "May 2027",
       category: "Project",
       achievements: ["Graduation Work Completed", "Steam Release", "Positive Reviews"]
     },
     {
-      id: 8,
-      title: "Present - Growing as a Game Developer",
-      description: "Steadily improving my skills through various projects. My ultimate goal is to become a game designer at Riot Games!",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      age: 25,
-      year: 2025,
-      date: "Present 2025",
+      id: 9,
+      title: "First day as a Game Art Designer at Epic Games",
+      description: "Steadily improving my skills through various projects. My ultimate goal is to become a game designer at Riot Games! However, working at Epic Games will also be a strong foundation in my career path and I hardly doubt Epic Games will also be a great workplace for people in the gaming industry. It does feel weird working at Epic Games as I am more familiar with Unreal Engine program more than their games LOL :)",
+      image: "https://cdn2.unrealengine.com/epic-games-social-share-1200x675-7670432fc58a.png",
+      age: 26,
+      year: 2028,
+      date: "January 2028",
       category: "Career",
       achievements: ["Continuous Growth", "Diverse Project Experience"]
-    }
+    },
+    {
+      id: 10,
+      title: "University of Utah Games Masters Program",
+      description: "Finally graduating from Games Master program! I feel proud of myself for gong through all kinds of challenges and hardships while doing the Masters program and working in a game company at the same time.",
+      image: "https://pbs.twimg.com/profile_images/1674876663618998275/SWdsyhwz_400x400.jpg",
+      age: 27,
+      year: 2029,
+      date: "May 2029",
+      category: "Education",
+      achievements: ["Master Graduate", "Expert", "Professional"]
+    },
+    {
+      id: 11,
+      title: "Married to my lovely husband",
+      description: "Marrying the love of my life in Korea, where I was born and grew my whole life. Now, I am starting to have my own family and looking forward to go on a new journey.",
+      image: "https://www.dottyaboutpaper.co.uk/cdn/shop/articles/couple-holding-wedding-bouquet-scaled_1024x1024.jpg?v=1694339675",
+      age: 31,
+      year: 2033,
+      date: "May 2033",
+      category: "Relationship",
+      achievements: ["Married Woman", "Starting my own family", "New happy phase"]
+    },
+    {
+      id: 12,
+      title: "Scouted by Krafton",
+      description: "Still surprising that I got a scout suggestion from Krafton, one of the most biggest gaming company in the world. As a person who loved to play mobile PUBG, it feels different to take a look at the behind scenes of the game that I used to play.",
+      image: "https://media.licdn.com/dms/image/v2/C561BAQFErsALR1Agjg/company-background_10000/company-background_10000/0/1620616415905/krafton_inc_cover?e=2147483647&v=beta&t=8hCLpWzsSQjYcQfarSYvwWIiwwJ1bLtlt4CnXNwABjo",
+      age: 34,
+      year: 2036,
+      date: "March 2036",
+      category: "Career",
+      achievements: ["First job in Korea", "Scout"]
+    },
+    {
+      id: 13,
+      title: "Concern as a mother and as a career woman",
+      description: "As a mom of two children, it is always difficult to find a balance between work and life. I am physically and mentally tired of managning both of them and concerned about whether or not I should quit my job. I still have a goal to achieve: working as a Skin Designer at Riot Games Valorant team.",
+      image: "https://www.riotgames.com/darkroom/1440/8136f3cda272877a691918dada74750a:d2bc5a8aa467bb5a5d077d9578b6f0b7/allgames-card-v6-final-lesstext-1920.jpg",
+      age: 34,
+      year: 2036,
+      date: "March 2036",
+      category: "Other",
+      achievements: ["Career VS Family", "Passion towards Riot Games "]
+    },
+    {
+      id: 14,
+      title: "Finally getting in to Riot Games",
+      description: "After years and years of challenging, I have finally succeeded in getting a job at Riot Games. I have been positioned to the TFT team, which is still great. I am excited to see what I will be working on. I hope people like me !!",
+      image: "https://upload.wikimedia.org/wikipedia/commons/d/db/12333_Olympic_Boulevard.jpg",
+      age: 37,
+      year: 2039,
+      date: "July 2039",
+      category: "Career",
+      achievements: ["Slow and Steady", "TFT team", "Team Riot"]
+    },
+    {
+      id: 15,
+      title: "Dream come true",
+      description: "Dream always come true. Luckily, I was transferred to the Valorant team as the project mananger who is in control of the overall flow of the project and the progression pace. I am more than happy and looking forward to the game.",
+      image: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c6c50b680c5e1846a9c77f86d5aa357d46584ffe-1920x1080.png?auto=format&fit=fill&q=80&w=1082",
+      age: 40,
+      year: 2042,
+      date: "October 2042",
+      category: "Career",
+      achievements: ["Dream come true", "Valorant", "Still Team Riot"]
+    },
   ];
   
   let nextId = memories.length + 1;
@@ -104,8 +181,8 @@ let memories = [
       'present': 12
     };
     
-    let month = 6; // Default to June if no month specified
-    let day = 15; // Default to 15th if no day specified
+    let month = 4; // Default to June if no month specified
+    let day = 30; // Default to 15th if no day specified
     
     if (memory.date) {
       const dateLower = memory.date.toLowerCase();
@@ -136,8 +213,8 @@ let memories = [
   
   // 헤더 업데이트
   function updateHeader() {
-    const maxAge = Math.max(...memories.map(m => m.age), 25);
-    const targetAge = 40;
+    const maxAge = Math.max(...memories.map(m => m.age), 40);
+    const targetAge = 85;
     const progress = (maxAge / targetAge) * 100;
     
     document.getElementById('current-level').textContent = maxAge;
@@ -260,7 +337,7 @@ let memories = [
     
     const imageCategories = {
       "Game": [
-        "https://images.unsplash.com/photo-1624357676666-4cca3b657627?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+        "https://i.namu.wiki/i/w-CC44y2koeY-oQk6xEnuIoufM9PM387CamPZYsRx0zEwrzzbMJXtCfqQRDAk0G-B85JoKfOKb07aRWO-sRlaA.webp",
         "https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
         "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
       ],
