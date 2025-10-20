@@ -64,7 +64,7 @@ let memories = [
     year: 2026,
     date: "January 2026",
     category: "Career",
-    achievements: ["First time studying abroad", "Utah life"]
+    achievements: ["First time studying abroad", "Utah life","Salt Lake City"]
   },
   {
     id: 7,
